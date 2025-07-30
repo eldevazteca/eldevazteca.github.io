@@ -1,0 +1,49 @@
+/* Estilos mínimos (personaliza los colores/fuentes) */
+:root {
+    --primary: #2563eb; /* Azul Dev */
+    --dark: #1e293b;
+    --light: #f8fafc;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: var(--dark);
+    background: var(--light);
+}
+header {
+    background: var(--primary);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--dark);
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.project {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--dark);
+    color: white;
+}
