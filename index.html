@@ -1,58 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <title>eldevazteca.dev | Desarrollador Mobile</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./assets/myicon.png" />
+    <title>eldevazteca</title>
+  </head>
+  <body>
     <header>
-        <h1>Hola👋, soy Edwin Jimenez</h1>
-        <p>Desarrollador Full Stack | JavaScript | Python | React | Kotlin</p>
+      <a href="eldevazteca.dev">
+        <h1 style="color: #ffd700">Dev Azteca</h1>
+      </a>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
     </header>
-    
-    <nav>
-        <a href="#about">Sobre mí</a>
-        <a href="#projects">Proyectos</a>
-        <a href="#contact">Contacto</a>
-        <!-- <a href="#blog">Blog</a> -->
-    </nav>
 
-    <section id="about">
-        <h2>Sobre mí</h2>
-        <p>¡Hola! Soy Edwin Jimenez, apasionado por la programación y el desarrollo mobil. Me especializo en el desarrollo con Kotlin, al igual que Kotlin Multiplatform. <br>
-        Actualmente soy estudiante de la carrera de Ing. en Electrónica y Computación de la Universidad de Guadalajara <br> <br>
-        Tengo 20 años, me gustan los retos y aprender cada día más, así mismo me apasiona el desarrollo mobile nativo</p>
+    <section id="inicio">
+      <img src="./assets/myicon.png" alt="Avatar" />
+      <h2>Hola, soy Edwin</h2>  
+      <p>
+        Desarrollador de software en aplicaciones móviles.
+      </p>
+      <a href="#proyectos" class="btn">Ver Proyectos</a>
     </section>
 
-    <section id="projects">
-        <h2>Mis Proyectos</h2>
+    <section id="proyectos">
+      <h3 style="color: #ffd700; text-align: center">Mis Proyectos</h3>
+      <div class="projects">
         <div class="project">
-            <h3>Proyecto 1</h3>
-            <p>Descripción breve. Tecnologías usadas: React, Node.js, HTML, CSS, JavaScript.</p>
-            <a href="#" target="_blank">Ver en GitHub</a>
+          <img src="proyecto1.png" alt="Proyecto 1" />
+          <div class="project-content">
+            <h4>Proyecto 1</h4>
+            <p>Descripción breve del proyecto, tecnologías y objetivo.</p>
+          </div>
         </div>
-        <!-- Añade más proyectos -->
+        <div class="project">
+          <img src="proyecto2.png" alt="Proyecto 2" />
+          <div class="project-content">
+            <h4>Proyecto 2</h4>
+            <p>Descripción breve del proyecto, tecnologías y objetivo.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>📧 <a href="mailto:eldevazteca@gmail.com">eldevazteca@gmail.com</a></p>
-        <p>
-            <a href="https://github.com/tuusuario" target="_blank">GitHub</a> | 
-            <a href="https://linkedin.com/in/tuperfil" target="_blank">LinkedIn</a> |
-            <a href="https://twitter.com/tuusuario" target="_blank">Twitter</a>
-        </p>
+    <section id="sobre-mi">
+      <h3 style="color: #ffd700; text-align: center">¿Quién es Dev Azteca?</h3>
+      <p style="text-align: center; max-width: 800px; margin: auto">
+        Soy desarrollador apasionado por crear soluciones eficientes. Me
+        especializo en C, C++, React, Kotlin Multiplatform y sistemas IoT.
+      </p>
+      <div class="skills">
+        <div>💻 C, C++, JavaScript, Kotlin</div>
+        <div>⚙️ React, Next.js</div>
+        <div>📦 MongoDB, PostgreSQL</div>
+        <div>🔌 Arduino, ESP8266</div>
+      </div>
     </section>
 
-    <footer>
-        <p>© 2025 eldevazteca.dev</p>
-    </footer>
+    <section id="contacto">
+      <h3 style="color: #ffd700; text-align: center">Contacto</h3>
+      <form>
+        <input type="text" placeholder="Nombre" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Mensaje" rows="4" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
 
-    <script>
-        // Ejemplo de JS básico (opcional)
-        console.log("¡Bienvenido a mi portfolio!");
-    </script>
-</body>
+    <footer>© 2025 Dev Azteca — Construido con ❤️ y café</footer>
+  </body>
 </html>

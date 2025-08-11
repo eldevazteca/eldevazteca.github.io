@@ -1,49 +1,142 @@
-/* Estilos mínimos (personaliza los colores/fuentes) */
-:root {
-    --primary: #2563eb; /* Azul Dev */
-    --dark: #1e293b;
-    --light: #f8fafc;
+body {
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
 }
 
-body {
-    font-family: 'Segoe UI', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: var(--dark);
-    background: var(--light);
-}
 header {
-    background: var(--primary);
-    color: white;
-    padding: 2rem;
-    text-align: center;
-}
-nav {
+    align-items: center;
+    background: #000;
+    border-bottom: 2px solid #ffd700;
     display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
-    background: var(--dark);
+    justify-content: space-between;
+    padding: 15px 8px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
-nav a {
-    color: white;
+
+header a {
     text-decoration: none;
 }
+
+header nav a {
+    margin: 0 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #ffd700;
+}
+
 section {
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: auto;
 }
+
+#inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 280px;
+}
+
+#inicio img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #ffd700;
+    margin-bottom: 20px;
+}
+
+#proyectos {
+    padding-top: 220px;
+}
+
+#sobre-mi {
+    padding-top: 220px;
+}
+
+#contacto {
+    padding-top: 50px;
+}
+
+.btn {
+    background: #ffd700;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #e6c200;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
 .project {
-    border: 1px solid #ddd;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 8px;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
 }
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 15px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    text-align: center;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    background: #111;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background: #ffd700;
+    color: #000;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #e6c200;
+}
+
 footer {
     text-align: center;
-    padding: 1rem;
-    background: var(--dark);
-    color: white;
+    padding: 20px;
+    border-top: 1px solid #333;
+    color: #888;
 }
