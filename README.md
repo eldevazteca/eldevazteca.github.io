@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/myicon.png" alt="Dev Azteca" width="120" style="border-radius: 50%" />
+  <img src="./assets/logoOf.png" alt="Dev Azteca" width="120" style="border-radius: 50%" />
 </div>
 
 <h1 align="center">eldevazteca.github.io</h1>
