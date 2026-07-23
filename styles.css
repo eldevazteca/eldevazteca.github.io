@@ -365,4 +365,37 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  .lang-btn {
+    padding: 6px 10px;
+    font-size: 0.78rem;
+  }
+}
+
+/* ===== Language Toggle ===== */
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  padding: 8px 14px;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, transform 0.2s;
+  line-height: 1;
+}
+
+.lang-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.globe-icon {
+  flex-shrink: 0;
 }

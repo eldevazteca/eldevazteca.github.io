@@ -15,38 +15,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="icon" href="./assets/logoOf.png" />
-    <title>eldevazteca — Edwin, desarrollador móvil</title>
+    <title data-i18n="page-title">eldevazteca — Edwin, desarrollador móvil</title>
   </head>
   <body>
 
     <header>
-      <a href="#inicio" class="logo">Dev Azteca</a>
+      <a href="#inicio" class="logo" data-i18n="logo">Dev Azteca</a>
       <div class="header-right">
-        <a href="/assets/Edwin-Jimenez-CV.pdf" download class="btn btn-nav">Descargar CV</a>
+        <a href="/assets/Edwin-Jimenez-CV.pdf" download class="btn btn-nav" data-i18n="download-cv">Descargar CV</a>
+        <button class="lang-btn" id="langToggle" aria-label="Cambiar idioma">
+          <svg class="globe-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          <span id="langLabel" data-i18n="lang-label">EN</span>
+        </button>
       </div>
     </header>
 
     <section id="inicio">
       <img src="./assets/logoOf.png" alt="Avatar de Edwin" />
-      <h2>Hola, soy Edwin</h2>
-      <p>Desarrollador de aplicaciones móviles y amante de la cultura <strong style="color: #607040;">Azteca</strong>.</p>
+      <h2 data-i18n="hero-title">Hola, soy Edwin</h2>
+      <p data-i18n-html="hero-desc">Desarrollador de aplicaciones móviles y amante de la cultura <strong style="color: #607040;">Azteca</strong>.</p>
       <div class="hero-links">
-        <a href="#proyectos" class="btn">Ver Proyectos</a>
+        <a href="#proyectos" class="btn" data-i18n="hero-btn">Ver Proyectos</a>
       </div>
     </section>
 
     <section id="proyectos">
-      <h3>Mis Proyectos</h3>
+      <h3 data-i18n="projects-title">Mis Proyectos</h3>
       <div class="projects">
         <!--? Parking -->
         <div class="project">
           <div class="project-bg" style="background: linear-gradient(135deg, #7b542f 0%, #c73838 100%)"></div>
           <div class="project-content">
-            <h4>Proyecto Parking</h4>
-            <p>Esta es una app para escriotorio, donde se gestionan los espacios del estacionamiento, los cobros y el control del dinero generado.</p>
+            <h4 data-i18n="proj-parking-title">Proyecto Parking</h4>
+            <p data-i18n="proj-parking-desc">Esta es una app para escriotorio, donde se gestionan los espacios del estacionamiento, los cobros y el control del dinero generado.</p>
             <hr />
             <strong>
-              <h5>Para ingresar, solicita el acceso mediante el formulario de contacto.</h5>
+              <h5 data-i18n="proj-access">Para ingresar, solicita el acceso mediante el formulario de contacto.</h5>
             </strong>
             <div class="project-tags">
               <span>Kotlin Multiplatform</span>
@@ -62,7 +70,7 @@
           <div class="project-bg" style="background: linear-gradient(135deg, #5e309a 0%, #2f4589 100%)"></div>
           <div class="project-content">
             <h4>Nomi</h4>
-            <p>Una app hecha para iOS, que te ayuda a gestionar tu dinero, ingresando ganancias y gastos, los cuales se muestran en gráficas.</p>
+            <p data-i18n="proj-nomi-desc">Una app hecha para iOS, que te ayuda a gestionar tu dinero, ingresando ganancias y gastos, los cuales se muestran en gráficas.</p>
             <div class="project-tags">
               <span>Swift</span>
               <span>SwiftUI</span>
@@ -79,7 +87,7 @@
           <div class="project-bg" style="background: linear-gradient(135deg, #2145b3 0%, #2da3ae 100%)"></div>
           <div class="project-content">
             <h4>Abarrotech</h4>
-            <p>Esta es una app para escriotorio, es un punto de venta para una tienda de abarrotes típica en México. <br>
+            <p data-i18n-html="proj-abarrotech-desc">Esta es una app para escriotorio, es un punto de venta para una tienda de abarrotes típica en México. <br>
               En colaboración con
               <strong>
                 <a href="https://corvusstack.dev" class="colaboration">corvusstack</a>
@@ -87,7 +95,7 @@
             </p>
             <hr />
             <strong>
-              <h5>Para ingresar, solicita el acceso mediante el formulario de contacto.</h5>
+              <h5 data-i18n="proj-access">Para ingresar, solicita el acceso mediante el formulario de contacto.</h5>
             </strong>
             <div class="project-tags">
               <span>Kotlin Multiplatform</span>
@@ -102,7 +110,7 @@
           <div class="project-bg" style="background: linear-gradient(135deg, #188854 0%, #d95f27 100%)"></div>
           <div class="project-content">
             <h4>SaveLo</h4>
-            <p>Una aplicación que está en busca de ofertas de tiendas departamentales que ofrezcan a un costo más bajo sus productos proximos a caducar. <br>
+            <p data-i18n-html="proj-savelo-desc">Una aplicación que está en busca de ofertas de tiendas departamentales que ofrezcan a un costo más bajo sus productos proximos a caducar. <br>
               En colaboración con
               <strong>
                 <a href="https://corvusstack.dev" class="colaboration">corvusstack</a>
@@ -121,8 +129,8 @@
     </section>
 
     <section id="sobre-mi">
-      <h3>¿Quién es el Dev Azteca?</h3>
-      <p class="about-text">
+      <h3 data-i18n="about-title">¿Quién es el Dev Azteca?</h3>
+      <p class="about-text" data-i18n-html="about-desc">
         Soy un estudiante de último semestre de Ingeniería en Electrónica y Computación en el Centro Universitario de los Valles (CUValles) de la Universidad de Guadajalara, sobre todo soy un desarrollador apasionado por las aplicaciones móviles. Estoy formándome como
         desarrollador nativo utilizando <strong>Swift</strong> para apps <strong>iOS</strong> y <strong>Kotlin</strong> para <strong>Android</strong> y que a su vez, utilizo la <strong>KMP</strong> para desarrollo de apps de escritorio.
       </p>
@@ -148,20 +156,20 @@
     </section>
 
     <section id="contacto">
-      <h3>Contacto</h3>
+      <h3 data-i18n="contact-title">Contacto</h3>
       <form action="https://formsubmit.co/eldevazteca@gmail.com" method="POST">
         <input type="hidden" name="_captcha" value="true" />
         <input type="hidden" name="_template" value="table" />
         <input type="text" name="_honey" style="display:none" />
-        <input type="text" name="nombre" placeholder="Nombre" required />
+        <input type="text" name="nombre" placeholder="Nombre" required data-i18n-placeholder="contact-name" />
         <input type="email" name="email" placeholder="Email" required />
-        <textarea name="mensaje" placeholder="Mensaje" rows="4" required></textarea>
-        <button type="submit">Enviar mensaje</button>
+        <textarea name="mensaje" placeholder="Mensaje" rows="4" required data-i18n-placeholder="contact-msg"></textarea>
+        <button type="submit" data-i18n="contact-btn">Enviar mensaje</button>
       </form>
     </section>
 
     <footer>
-      <p>© 2026 Dev Azteca — Construido con estrés y café ☕️</p>
+      <p data-i18n="footer-text">© 2026 Dev Azteca — Construido con estrés y café ☕️</p>
       <div class="footer-links">
         <a href="https://github.com/eldevazteca" target="_blank" rel="noopener">GitHub</a>
         <a href="https://www.linkedin.com/in/eldevazteca" target="_blank" rel="noopener">LinkedIn</a>
