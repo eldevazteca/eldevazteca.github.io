@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "skills": {
+    "modern-web-development": {
+      "source": "mindrally/skills",
+      "sourceType": "github",
+      "skillPath": "modern-web-development/SKILL.md",
+      "computedHash": "01f88bbb9650f319582b831f4cf41354df9a4520c96738c36b1fd201b4da087d"
+    },
+    "react-vite-best-practices": {
+      "source": "asyrafhussin/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/react-vite-best-practices/SKILL.md",
+      "computedHash": "82994934665a490b227fabdfec3d148b1fa291d77d82ccf978e761b9e1ff6e4c"
+    },
+    "web-development": {
+      "source": "mindrally/skills",
+      "sourceType": "github",
+      "skillPath": "web-development/SKILL.md",
+      "computedHash": "3d2cc6de17ccd5ce592742b289e38aea7f675d029a84583e1099679047323d1a"
+    }
+  }
+}
